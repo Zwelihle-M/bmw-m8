@@ -1,5 +1,5 @@
 {
-  "name": "bmw-m8",
+  "name": "bmw-m4",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-three/drei": "^9.64.0",
+    "@react-three/fiber": "^8.12.0",
     "eslint": "8.37.0",
     "eslint-config-next": "13.2.4",
     "next": "13.2.4",
