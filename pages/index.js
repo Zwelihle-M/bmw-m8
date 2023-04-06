@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { Canvas } from "@react-three/fiber";
 import { useGLTF, OrbitControls } from "@react-three/drei";
+import MercedesModel from "../components/MercedesModel";
 
 export default function Home() {
   function Model(props) {
@@ -22,7 +23,11 @@ export default function Home() {
           camera={{ fov: 45 }}
           style={{ position: "absolute" }}
         >
-          <OrbitControls enableZoom={false} enablePan={false} />
+          <OrbitControls
+            enableZoom={false}
+            enablePan={false}
+       
+          />
           <ambientLight intensity={1} />
           <hemisphereLight intensity={0.1} />
           <pointLight
@@ -42,6 +47,7 @@ export default function Home() {
           <Model scale={0.1} />
         </Canvas>
       </main>
+      <MercedesModel />
     </div>
   );
 }
